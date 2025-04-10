@@ -1,35 +1,19 @@
-@import './base.css';
+@import "tailwindcss";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400&display=swap');
+
+:root {
+  --color-black: #232323;
+  --color-light-black: #F2F2F2;
+  --color-dark-blue: #0133FD;
+  --color-light-blue: #0164FD;
+  --color-lighter-blue: #D5E5FF;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+body{
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-white);
 }
