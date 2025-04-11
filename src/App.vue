@@ -5,9 +5,9 @@ import TheFooter from './components/TheFooter.vue';
 </script>
 
 <template>
-  <div class="flex flex-col min-h-screen bg-[Black]">
+  <div class="flex flex-col min-h-screen max-w-screen bg-[Black]">
     <TheNavbar />
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 flex-grow">
+    <main class="w-full flex-grow">
       <RouterView />
     </main>
     <TheFooter />
