@@ -1,3 +1,8 @@
+<script setup>
+import { ArrowRightIcon } from '@heroicons/vue/24/outline'
+</script>
+
+
 <template>
   <div class="relative isolate px-6 pt-14 lg:px-8">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -25,8 +30,10 @@
             ÜCRETSİZ KULLANIN</a>
 
           <a href="#"
-            class="px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 transition-opacity duration-300 rounded-md">DEMO
-            GÖRÜŞME ALIN <span aria-hidden="true">→</span></a>
+            class="flex gap-2 items-center px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 transition-opacity duration-300 rounded-md">DEMO
+            GÖRÜŞME ALIN
+            <ArrowRightIcon class="size-4" />
+          </a>
         </div>
 
       </div>

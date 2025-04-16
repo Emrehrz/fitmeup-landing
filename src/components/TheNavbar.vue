@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { Bars3Icon, XMarkIcon, ArrowUpRightIcon, ArrowRightIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
   { name: 'ÜRÜN HAKKINDA ', href: '#' },
@@ -30,12 +30,17 @@ const mobileMenuOpen = ref(false)
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm/6 font-semibold ">{{ item.name
-          }}</a>
+        <a v-for="item in navigation" :key="item.name" :href="item.href" class=" flex gap-2 text-sm/6 font-semibold ">{{
+          item.name
+          }}
+          <ArrowUpRightIcon class="size-4" aria-hidden="true" />
+        </a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm/6 font-semibold ">DEMO
-          GÖRÜŞME ALIN <span aria-hidden="true">&rarr;</span></a>
+        <a href="#" class="flex gap-3 items-center text-sm/6 font-semibold ">DEMO
+          GÖRÜŞME ALIN
+          <ArrowRightIcon class="size-4" />
+        </a>
       </div>
     </nav>
     <Dialog class="lg:hidden " @close="mobileMenuOpen = false" :open="mobileMenuOpen">
