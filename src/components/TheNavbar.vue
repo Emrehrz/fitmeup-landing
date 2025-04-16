@@ -1,52 +1,75 @@
-<template>
-  <nav class="w-full flex items-center justify-between px-4 md:px-24 py-4 md:py-0 relative z-10 bg-gren90">
-    <!-- Logo -->
-    <div class="flex items-center">
-      <img src="../assets/img/Logo2.png" alt="Logo" class="h-12 w-auto md:h-[140px] image-rendering-optimized" />
-    </div>
-
-    <!-- Hamburger button (mobile) -->
-    <button @click="isOpen = !isOpen" class="md:hidden text-white focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-
-    <!-- Menu and CTA Desktop -->
-    <div class="hidden md:flex items-center space-x-8">
-      <!-- Menu items -->
-      <ul class="flex items-center space-x-8 px-8 text-sm tracking-wide text-white">
-        <li><a href="#" class="hover:underline">ÜRÜN HAKKINDA ↗</a></li>
-        <li><a href="#" class="hover:underline">HİZMETLER ↗</a></li>
-      </ul>
-
-      <!-- CTA (Desktop version) -->
-      <a href="#"
-        class="p-2 px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-[Darkblue] to-[LightBlue] text-[Lighterblue] shadow-lg hover:opacity-90 transition">
-        DEMO GÖRÜŞME ALIN ↗
-      </a>
-    </div>
-
-    <!-- Mobile Menu (when expanded) -->
-    <div :class="['md:hidden absolute top-full left-0 w-full bg-black p-4', isOpen ? 'block' : 'hidden']">
-      <ul class="flex flex-col space-y-4 text-sm tracking-wide text-white">
-        <li><a href="#" class="hover:underline">ÜRÜN HAKKINDA ↗</a></li>
-        <li><a href="#" class="hover:underline">HİZMETLER ↗</a></li>
-        <li>
-          <a href="#"
-            class="block text-center w-full p-2 rounded-full text-sm font-semibold bg-gradient-to-r from-[Darkblue] to-[LightBlue] text-[Lighterblue] shadow-lg hover:opacity-90 transition">
-            DEMO GÖRÜŞME ALIN ↗
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</template>
-
 <script setup>
 import { ref } from 'vue'
-const isOpen = ref(false)
+import { Dialog, DialogPanel } from '@headlessui/vue'
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+
+const navigation = [
+  { name: 'ÜRÜN HAKKINDA ', href: '#' },
+  { name: 'HİZMETLER', href: '#' },
+]
+
+const mobileMenuOpen = ref(false)
 </script>
+
+<template>
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img src="../assets/img/Logo2.png" alt="Logo" class="h-24 w-auto image-rendering-optimized" />
+          <!-- <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+            alt="" /> -->
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 "
+          @click="mobileMenuOpen = true">
+          <span class="sr-only">Open main menu</span>
+          <Bars3Icon class="size-6" aria-hidden="true" />
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm/6 font-semibold ">{{ item.name
+          }}</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="text-sm/6 font-semibold ">DEMO
+          GÖRÜŞME ALIN <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </nav>
+    <Dialog class="lg:hidden " @close="mobileMenuOpen = false" :open="mobileMenuOpen">
+      <div class="fixed inset-0 z-50" />
+      <DialogPanel
+        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[Black] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+              alt="" />
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 " @click="mobileMenuOpen = false">
+            <span class="sr-only">Close menu</span>
+            <XMarkIcon class="size-6" aria-hidden="true" />
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a v-for="item in navigation" :key="item.name" :href="item.href"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50">{{
+                  item.name }}</a>
+            </div>
+            <div class="py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold  hover:bg-gray-50">DEMO
+                GÖRÜŞME ALIN </a>
+            </div>
+          </div>
+        </div>
+      </DialogPanel>
+    </Dialog>
+  </header>
+</template>
 
 <style>
 /* Logo rendering optimization */
