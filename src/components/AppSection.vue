@@ -14,9 +14,9 @@
     <div class="relative z-10 w-full max-w-6xl mx-auto px-4 py-12 md:py-20">
       <!-- Türkçe başlık -->
       <div class="text-center mb-6 md:mb-10">
-        <h1 class="text-white text-xl md:text-2xl font-medium">
+        <h2 class="text-white text-xl md:text-2xl lg:text-3xl font-medium">
           Tüm koçluk süreçlerinizi tek bir noktadan yönetin.
-        </h1>
+        </h2>
 
         <!-- İkonlar ve Whatsapp ile birlikte kullanım metni -->
         <div class="flex items-center justify-center mt-4 space-x-3">
@@ -44,9 +44,6 @@
                 <path
                   d="M8,12H16V14H8V12M10,16H14V18H10V16M8,8H16V10H8V8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" />
               </svg>
-            </div>
-            <div class="flex items-center justify-center w-6 h-6 rounded-full bg-cyan-500 text-white">
-              <span class="text-xs font-bold">H</span>
             </div>
           </div>
           <span class="text-white text-sm">Whatsapp'ı fitmeup ile birlikte kullanın.</span>
