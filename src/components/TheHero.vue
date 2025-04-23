@@ -49,7 +49,7 @@ import { ArrowRightIcon } from '@heroicons/vue/24/outline'
 </template> -->
 
 <template>
-  <div class="relative isolate px-4 sm:px-6 md:px-8 pt-8 md:pt-0">
+  <div class="relative isolate px-4 pt-12 sm:px-6 md:px-8 md:pt-0">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
       <div
         class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[Darkblue] to-gray-500 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"

@@ -1,17 +1,42 @@
+<script>
+export default {
+  data() {
+    return {
+      isMobile: false
+    }
+  },
+  mounted() {
+    this.checkScreenSize();
+    window.addEventListener('resize', this.checkScreenSize);
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.checkScreenSize);
+  },
+  methods: {
+    checkScreenSize() {
+      this.isMobile = window.innerWidth < 768;
+    }
+  }
+}
+</script>
+
 <template>
-  <div class="relative w-full overflow-hidden bg-gradient-to-b">
+  <div class="relative w-full overflow-hidden min-h-screen">
     <!-- Arka plan halatlar (straps) -->
     <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#555b60]/90 to-[Black]">
-      <img src="../assets/img/Rope.webp" alt="Arka plan halatlar" class="w-full h-auto object-cover opacity-85" />
+      <img v-if="isMobile" src="../assets/img/Rope2.webp" alt="Arka plan halatlar"
+        class="w-full h-full object-cover md:object-cover opacity-85" />
+      <img v-else src="../assets/img/Rope-1.webp" alt="Arka plan halatlar"
+        class="w-full h-full object-cover md:object-cover opacity-85" />
     </div>
 
     <!-- Siyah şeritler (Yazı kısmının üstünde) -->
-    <div class="absolute w-full overflow-hidden z-0">
-      <img src="../assets/img/Blur.webp" alt="Arka plan halatlar" class="w-full h-auto object-cover opacity-70" />
+    <div class="absolute w-full h-full overflow-hidden z-0">
+      <img src="../assets/img/Blur.webp" alt="Arka plan halatlar" class="w-full h-full object-cover opacity-70" />
     </div>
 
     <!-- İçerik container -->
-    <div class="relative z-10 w-full max-w-6xl mx-auto px-4 py-12 md:py-20">
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-4 py-12 md:py-20 flex flex-col min-h-screen">
       <!-- Türkçe başlık -->
       <div class="text-center mb-6 md:mb-10">
         <h2 class="text-white text-xl md:text-2xl lg:text-3xl font-medium">
@@ -51,15 +76,25 @@
       </div>
 
       <!-- Laptop mockup -->
-      <div class="mt-6 flex justify-center perspective-1000">
-        <div class="w-full max-w-4xl transform rotate-x-5">
-          <img src="../assets/img/Laptop.webp" alt="Laptop FitMeUp Uygulaması" class="w-full h-auto" />
+      <div class="flex-grow flex justify-center items-center perspective-1000 my-4">
+        <div class="w-full max-w-4xl transform rotate-x-5 laptop-animation">
+          <img src="../assets/img/Laptop.webp" alt="Laptop FitMeUp Uygulaması" class="w-full" />
         </div>
+      </div>
+
+      <!-- Alt metin bölümü -->
+      <div class="text-center mt-4 mb-6 text-white">
+        <h3 class="text-lg md:text-xl lg:text-2xl">
+          Öğrencilerinize kullanıcı dostu bir deneyim sunun,
+        </h3>
+        <p class="text-base md:text-lg">
+          her adımda motivasyonlarını artırın!
+        </p>
       </div>
     </div>
 
     <!-- Siyah şeritler (Laptop kısmının altında) -->
-    <div class="absolute bottom-0 w-full overflow-hidden  z-10">
+    <div class="absolute bottom-0 w-full overflow-hidden z-10">
       <img src="../assets/img/Blur.webp" alt="Arka plan halatlar" class="w-full h-auto object-cover opacity-85" />
     </div>
   </div>
@@ -72,5 +107,43 @@
 
 .rotate-x-5 {
   transform: rotateX(5deg);
+}
+
+.laptop-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: rotateX(5deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotateX(5deg) translateY(-15px);
+  }
+
+  100% {
+    transform: rotateX(5deg) translateY(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .laptop-animation {
+    animation: float-mobile 6s ease-in-out infinite;
+  }
+
+  @keyframes float-mobile {
+    0% {
+      transform: rotateX(3deg) translateY(0px);
+    }
+
+    50% {
+      transform: rotateX(3deg) translateY(-10px);
+    }
+
+    100% {
+      transform: rotateX(3deg) translateY(0px);
+    }
+  }
 }
 </style>

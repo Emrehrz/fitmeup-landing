@@ -13,3 +13,32 @@ import TheFooter from './components/TheFooter.vue';
     <TheFooter />
   </div>
 </template>
+
+<style>
+/* Chrome, Edge ve Safari için */
+::-webkit-scrollbar {
+  width: 4px;
+  /* Daha ince scrollbar için 8px yerine 6px kullanıyoruz */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox için */
+* {
+  scrollbar-width: thin;
+  /* Firefox'ta "thin" değeri zaten oldukça ince */
+  scrollbar-color: #888 #f1f1f1;
+}
+</style>

@@ -44,7 +44,7 @@ onMounted(() => {
     <div class="marquee-outer">
       <div ref="marqueeContainerRef" class="marquee-inner">
         <!-- İlk kopya -->
-        <div class="tags-wrapper flex items-center space-x-3 md:space-x-4 text-xs md:text-sm lg:text-base">
+        <div class="tags-wrapper flex items-center space-x-3 md:space-x-4 text-sm md:text-sm lg:text-base">
           <div v-for="(tag, index) in tags" :key="`original-${index}`"
             class="tag-item flex items-center group whitespace-nowrap">
             <a :href="tag.href" class="tag-link hover:text-[DarkBlue] transition-colors duration-300 font-medium px-1">
@@ -56,7 +56,7 @@ onMounted(() => {
         </div>
 
         <!-- İkinci kopya (ilk kopyanın eşiti) -->
-        <div class="tags-wrapper flex items-center space-x-3 md:space-x-4 text-xs md:text-sm lg:text-base">
+        <div class="tags-wrapper flex items-center space-x-3 md:space-x-4 text-sm md:text-sm lg:text-base">
           <div v-for="(tag, index) in tags" :key="`duplicate-${index}`"
             class="tag-item flex items-center group whitespace-nowrap">
             <a :href="tag.href" class="tag-link hover:text-[DarkBlue] transition-colors duration-300 font-medium px-1">
