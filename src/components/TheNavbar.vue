@@ -16,10 +16,7 @@ const mobileMenuOpen = ref(false)
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
           <img src="../assets/img/Logo2.png" alt="Logo" class="h-24 w-auto image-rendering-optimized" />
-          <!-- <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-            alt="" /> -->
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -30,14 +27,15 @@ const mobileMenuOpen = ref(false)
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a v-for="item in navigation" :key="item.name" :href="item.href" class=" flex gap-2 text-sm/6 font-semibold ">{{
+        <a v-for="item in navigation" :key="item.name" :href="item.href" class=" flex gap-2 text-sm/6 font-semibold">{{
           item.name
-          }}
+        }}
           <ArrowUpRightIcon class="size-4" aria-hidden="true" />
         </a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="flex gap-3 items-center text-sm/6 font-semibold ">DEMO
+        <a href="#"
+          class="flex gap-2 items-center px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 transition-opacity duration-300 rounded-md">DEMO
           GÖRÜŞME ALIN
           <ArrowRightIcon class="size-4" />
         </a>
@@ -48,12 +46,11 @@ const mobileMenuOpen = ref(false)
       <DialogPanel
         class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[Black] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
+          <!-- <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-              alt="" />
-          </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 " @click="mobileMenuOpen = false">
+            <img class="h-8 w-auto" src="../assets/img/Logo2.png" alt="" />
+          </a> -->
+          <button type="button" class="ml-auto rounded-md p-2.5 " @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span>
             <XMarkIcon class="size-6" aria-hidden="true" />
           </button>
@@ -66,8 +63,11 @@ const mobileMenuOpen = ref(false)
                   item.name }}</a>
             </div>
             <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold  hover:bg-gray-50">DEMO
-                GÖRÜŞME ALIN </a>
+              <a href="#"
+                class="flex gap-2 items-center px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 transition-opacity duration-300 rounded-md">DEMO
+                GÖRÜŞME ALIN
+                <ArrowRightIcon class="size-4" />
+              </a>
             </div>
           </div>
         </div>
