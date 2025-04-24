@@ -20,15 +20,13 @@
     </div>
 
     <!-- Alt kısım - Büyütülmüş telefon ve açıklama -->
-    <div
+    <!-- <div
       class="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-24 lg:gap-32 pt-8 sm:py-12 md:py-16 lg:py-0 px-4 sm:px-8 md:px-16 lg:px-24">
-      <!-- Phone image - büyütülmüş -->
       <div class="w-full sm:w-1/2 md:w-2/5 flex justify-center md:justify-end relative mb-0">
         <img src="../assets/img/Login1.webp" alt="Fitmeup mobil uygulamasi"
           class="w-2/3 sm:w-3/4 md:w-4/5 h-auto object-contain transform hover:translate-y-2 transition-transform duration-500" />
       </div>
 
-      <!-- Text content - büyütülmüş -->
       <div
         class="flex flex-col items-center md:items-start max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-center md:text-left">
         <p
@@ -43,7 +41,7 @@
           HEMEN KATIL
         </a>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
