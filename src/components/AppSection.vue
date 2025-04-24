@@ -45,7 +45,7 @@ export default {
 
         <!-- İkonlar ve Whatsapp ile birlikte kullanım metni -->
         <div class="flex items-center justify-center mt-4 space-x-3">
-          <div class="flex items-center space-x-2">
+          <!-- <div class="flex items-center space-x-2">
             <div class="w-6 h-6">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
                 <path
@@ -70,7 +70,7 @@ export default {
                   d="M8,12H16V14H8V12M10,16H14V18H10V16M8,8H16V10H8V8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" />
               </svg>
             </div>
-          </div>
+          </div> -->
           <span class="text-white text-sm">Whatsapp'ı fitmeup ile birlikte kullanın.</span>
         </div>
       </div>

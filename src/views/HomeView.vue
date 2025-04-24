@@ -3,7 +3,6 @@ import TheHero from '@/components/TheHero.vue';
 import TagsTape from '@/components/TagsTape.vue';
 import AppSection from '@/components/AppSection.vue';
 import PhoneGrid from '@/components/PhoneGrid.vue';
-import LastSection from '@/components/LastSection.vue';
 </script>
 
 <template>
@@ -11,5 +10,4 @@ import LastSection from '@/components/LastSection.vue';
   <TagsTape />
   <AppSection />
   <PhoneGrid />
-  <!-- <LastSection /> -->
 </template>
