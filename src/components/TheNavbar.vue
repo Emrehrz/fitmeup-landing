@@ -16,7 +16,7 @@ const mobileMenuOpen = ref(false)
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
-          <img src="../assets/img/Logo2.png" alt="Logo" class="h-24 w-auto image-rendering-optimized" />
+          <img src="../assets/img/Logo.webp" alt="Logo" class=" w-[150px] image-rendering-optimized" />
         </a>
       </div>
       <div class="flex lg:hidden">

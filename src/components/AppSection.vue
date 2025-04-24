@@ -71,7 +71,9 @@ export default {
               </svg>
             </div>
           </div> -->
-          <span class="text-white text-sm">Whatsapp'ı fitmeup ile birlikte kullanın.</span>
+          <span class="text-white text-sm font-semibold">
+            <div class="text-green-600">Whatsapp</div> 'ı fitmeup ile birlikte kullanın.
+          </span>
         </div>
       </div>
 

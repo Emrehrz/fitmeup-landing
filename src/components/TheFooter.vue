@@ -5,10 +5,7 @@
       <div>
         <h3 class="text-xl font-semibold mb-4">Contact</h3>
         <ul class="space-y-2 ">
-          <li>Work inquires: <a href="mailto:work@vaultflow.com" class="hover:underline">work@vaultflow.com</a></li>
-          <li>PR and speaking: <a href="mailto:press@vaultflow.com" class="hover:underline">press@vaultflow.com</a></li>
-          <li>New business: <a href="mailto:newbusiness@fitmeup.com" class="hover:underline">newbusiness@fitmeup.com</a>
-          </li>
+          <li>Work inquires: <a href="mailto:work@vaultflow.com" class="hover:underline">fitmeupteam@gmail.com</a></li>
         </ul>
       </div>
 

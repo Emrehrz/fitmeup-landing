@@ -70,7 +70,7 @@ import { ArrowRightIcon } from '@heroicons/vue/24/outline'
         süreçlerinizi uçtan uca dijitalleştirin.
       </p>
 
-      <p class="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8"> Fitmeup, fitness koçlarının
+      <p class="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8"> fitmeup, fitness koçlarının
         öğrencileri ile olan iletişimini ve süreç takibini
         iyi organize edilmiş bir şekilde koçlarla buluşturan bir uygulamadır.</p>
 
