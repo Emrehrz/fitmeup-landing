@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-[#111827] text-white py-10 px-6">
+  <footer class="bg-[#111827] text-white py-8 px-6">
     <div class="max-w-6xl mx-auto grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
       <!-- Contact -->
       <div class="text-center md:text-left flex flex-col justify-center">
@@ -23,7 +23,7 @@
       </div>
 
       <!-- Logo -->
-      <div class="flex justify-center md:justify-end items-center">
+      <div class="hidden sm:flex justify-center md:justify-end items-center">
         <img src="../assets/img/Logo.webp" alt="Fit Me Up Logo" class="h-24 md:h-[180px] w-auto object-contain" />
       </div>
     </div>

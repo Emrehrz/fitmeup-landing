@@ -49,7 +49,7 @@ import { ArrowRightIcon } from '@heroicons/vue/24/outline'
 </template> -->
 
 <template>
-  <div class="relative isolate px-4 pt-12 sm:px-6 md:px-8 md:pt-0">
+  <div class="relative isolate px-4 pt-12 sm:px-6 md:px-8 md:pt-0 text-[Black] dark:text-gray-200">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
       <div
         class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[Darkblue] to-gray-500 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -61,7 +61,7 @@ import { ArrowRightIcon } from '@heroicons/vue/24/outline'
         style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
     </div>
 
-    <div class="mx-auto max-w-3xl py-20 sm:py-28 lg:py-36 px-4 sm:px-0 text-center">
+    <div class="mx-auto max-w-3xl py-28 lg:py-36 px-4 sm:px-0 text-center">
       <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-center mb-1">
         Uzaktan Koçluk
       </h1>
@@ -70,14 +70,14 @@ import { ArrowRightIcon } from '@heroicons/vue/24/outline'
         süreçlerinizi uçtan uca dijitalleştirin.
       </p>
 
-      <p class="inter-text mt-6 text-lg font-medium text-pretty text-gray-200 sm:text-xl/8"> fitmeup, fitness
+      <p class="inter-text mt-6 text-lg font-medium text-pretty  sm:text-xl/8"> fitmeup, fitness
         koçlarının
         öğrencileri ile olan iletişimini ve süreç takibini
         iyi organize edilmiş bir şekilde koçlarla buluşturan bir uygulamadır.</p>
 
       <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
         <a href="#"
-          class="inter-text rounded-full border border-white hover:bg-white hover:text-black transition-colors px-5 py-3 text-sm font-semibold text-white">
+          class="inter-text rounded-full border dark:text-white border-[Black] hover:bg-[Black] hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black transition-colors px-5 py-3 text-sm font-semibold ">
           HEMEN ÜCRETSİZ KULLANIN
         </a>
 

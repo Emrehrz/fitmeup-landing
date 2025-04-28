@@ -1,6 +1,8 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400&display=swap'); */
 
 :root {
   --color-black: #232323;
@@ -8,6 +10,11 @@
   --color-dark-blue: #0133FD;
   --color-light-blue: #0164FD;
   --color-lighter-blue: #D5E5FF;
+}
+
+
+body{
+  touch-action: manipulation;
 }
 
 @font-face {
@@ -39,12 +46,4 @@
       url('../assets/fonts/Inter_18pt-Regular.woff') format('woff2');
   font-weight: 400; /* bold italic */
   font-style: normal;
-}
-
-body{
-   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--color-white);
 }

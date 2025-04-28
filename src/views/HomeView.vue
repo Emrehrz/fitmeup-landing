@@ -12,5 +12,4 @@ import EnterpriseSection from '@/components/EnterpriseSection.vue';
   <AppSection />
   <PhoneGrid />
   <EnterpriseSection />
-  <video></video>
 </template>

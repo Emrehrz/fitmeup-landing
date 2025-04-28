@@ -1,14 +1,14 @@
 <template>
   <div
-    class="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-24 lg:gap-32 pt-8 sm:py-12 md:py-16 lg:pt-12 px-4 sm:px-8 md:px-16 lg:px-24">
+    class="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-24 lg:gap-32 pt-8 sm:py-12 md:pt-16 lg:pt-12 px-4 sm:px-8 md:px-16 lg:px-24">
     <!-- Phone container -->
-    <div class="w-full sm:w-1/2 md:w-2/5 flex justify-center md:justify-end relative mb-0">
+    <div class="w-full sm:w-1/2 md:w-2/5 flex justify-center md:justify-center relative mb-0">
       <div
         class="relative w-2/3 sm:w-3/4 md:w-4/5 h-auto transform hover:translate-y-2 transition-transform duration-500">
         <!-- Telefon resmi (arka plan olarak) -->
         <img src="../assets/img/Login1.webp" alt="Fitmeup mobil uygulamasi" class="w-full h-auto object-contain" />
         <!-- Video -->
-        <video autoplay muted loop playsinline class="absolute object-cover rounded-3xl video-size">
+        <video autoplay muted loop playsinline class="absolute object-cover rounded-2xl md:rounded-3xl video-size">
           <source src="../assets/video/Video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -19,7 +19,7 @@
     <div
       class="flex flex-col items-center md:items-start max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg inter-text text-center md:text-left">
       <p
-        class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium bg-gradient-to-br from-[Lightblue] via-white to-[Darkblue] bg-clip-text text-transparent mb-6 sm:mb-8 leading-tight sm:leading-snug">
+        class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium bg-gradient-to-br from-[Black]/90 to-[Darkblue]/70 dark:from-[Lightblue] dark:via-white dark:to-[Darkblue] bg-clip-text text-transparent mb-6 sm:mb-8 leading-tight sm:leading-snug">
         fitmeup altyapısıyla
         tamamen size ait olan
         koçluk uygulamanızı oluşturun

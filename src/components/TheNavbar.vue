@@ -12,10 +12,11 @@ const mobileMenuOpen = ref(false)
 </script>
 
 <template>
-  <header class="absolute inset-x-0 top-0 z-50">
+  <header class="absolute inset-x-0 top-0 z-50 ">
     <nav class="flex items-center justify-between p-6 lg:px-8 lg:p-8" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a href="#" class="m-0 p-0">
+
+        <a href="#" class=" p-4 rounded-lg bg-[#555b60]/90 dark:bg-transparent">
           <img src="../assets/img/logo-cropped.webp" alt="FitMeUp Logo" class="logo" />
         </a>
       </div>
@@ -34,7 +35,7 @@ const mobileMenuOpen = ref(false)
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#"
-          class="flex gap-2 items-center px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 transition-opacity duration-300 rounded-md">
+          class="flex gap-2 items-center px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 text-white transition-opacity duration-300 rounded-md">
           DEMO GÖRÜŞME ALIN
           <ArrowRightIcon class="size-4" />
         </a>
@@ -43,7 +44,7 @@ const mobileMenuOpen = ref(false)
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 z-50" />
       <DialogPanel
-        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[Black] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-br bg-white text-[Black] dark:bg-[Black] dark:text-white  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
           <button type="button" class="ml-auto rounded-md p-2.5" @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span>
@@ -51,7 +52,7 @@ const mobileMenuOpen = ref(false)
           </button>
         </div>
         <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="-my-6 divide-y divide-[LightBlue] dark:divide-gray-500/10">
             <div class="space-y-2 py-6">
               <a v-for="item in navigation" :key="item.name" :href="item.href"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50">
@@ -60,7 +61,7 @@ const mobileMenuOpen = ref(false)
             </div>
             <div class="py-6">
               <a href="#"
-                class="flex gap-2 items-center px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 transition-opacity duration-300 rounded-md">
+                class="flex gap-2 items-center px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 transition-opacity duration-300 rounded-md text-white">
                 DEMO GÖRÜŞME ALIN
                 <ArrowRightIcon class="size-4" />
               </a>

@@ -37,7 +37,7 @@ onBeforeUnmount(() => {
 
     <!-- Content container -->
     <div class="relative z-10 w-full max-w-6xl mx-auto px-4 py-8 md:py-20 flex flex-col min-h-screen">
-      <!-- Turkish title -->
+      <!-- Title -->
       <div class="text-center mb-6 md:mb-10">
         <h2 class="text-white text-xl md:text-2xl lg:text-3xl font-medium px-2">
           Tüm koçluk süreçlerinizi tek bir noktadan yönetin.
@@ -60,21 +60,12 @@ onBeforeUnmount(() => {
       </div>
 
       <!-- Laptop mockup -->
-      <div class="flex-grow flex justify-center items-center perspective-1000 my-4">
+      <div class="flex-grow flex justify-center items-center perspective-1000">
         <div class="w-full max-w-4xl transform rotate-x-5 laptop-animation">
           <img src="../assets/img/Laptop.webp" alt="Laptop FitMeUp Uygulaması" class="w-full" />
         </div>
       </div>
 
-      <!-- Bottom text section -->
-      <div class="text-center mt-4 mb-6 text-white px-2">
-        <h3 class="text-lg md:text-xl lg:text-2xl">
-          Öğrencilerinize kullanıcı dostu bir deneyim sunun,
-        </h3>
-        <p class="text-base md:text-lg mt-1">
-          her adımda motivasyonlarını artırın!
-        </p>
-      </div>
     </div>
 
     <!-- Black stripes (below laptop section) -->
