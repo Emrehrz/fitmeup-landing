@@ -8,7 +8,7 @@
         <!-- Telefon resmi (arka plan olarak) -->
         <img src="../assets/img/Login1.webp" alt="Fitmeup mobil uygulamasi" class="w-full h-auto object-contain" />
         <!-- Video -->
-        <video autoplay muted loop playsinline class="absolute object-cover rounded-2xl md:rounded-3xl video-size">
+        <video autoplay muted loop playsinline class="absolute object-cover rounded-xl md:rounded-3xl video-size">
           <source src="../assets/video/Video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
