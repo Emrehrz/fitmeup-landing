@@ -62,26 +62,27 @@ import { ArrowRightIcon } from '@heroicons/vue/24/outline'
     </div>
 
     <div class="mx-auto max-w-3xl py-20 sm:py-28 lg:py-36 px-4 sm:px-0 text-center">
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-center mb-2 md:mb-4">
+      <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-center mb-1">
         Uzaktan Koçluk
       </h1>
 
-      <p class="text-lg sm:text-xl md:text-2xl font-light mb-6">
+      <p class="hero-content text-lg sm:text-xl md:text-2xl font-light mb-6">
         süreçlerinizi uçtan uca dijitalleştirin.
       </p>
 
-      <p class="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8"> fitmeup, fitness koçlarının
+      <p class="inter-text mt-6 text-lg font-medium text-pretty text-gray-200 sm:text-xl/8"> fitmeup, fitness
+        koçlarının
         öğrencileri ile olan iletişimini ve süreç takibini
         iyi organize edilmiş bir şekilde koçlarla buluşturan bir uygulamadır.</p>
 
       <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
         <a href="#"
-          class="rounded-full border border-white hover:bg-white hover:text-black transition-colors px-5 py-3 text-sm font-semibold text-white">
+          class="inter-text rounded-full border border-white hover:bg-white hover:text-black transition-colors px-5 py-3 text-sm font-semibold text-white">
           HEMEN ÜCRETSİZ KULLANIN
         </a>
 
         <a href="#"
-          class="flex items-center gap-2 px-5 py-3 text-sm font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 rounded-md text-white">
+          class="inter-text flex items-center gap-2 px-5 py-3 text-sm font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 rounded-md text-white">
           DEMO GÖRÜŞME ALIN
           <ArrowRightIcon class="w-4 h-4" />
         </a>
@@ -104,3 +105,17 @@ import { ArrowRightIcon } from '@heroicons/vue/24/outline'
     </div>
   </div>
 </template>
+
+<style scoped>
+.hero-title {
+  font-family: 'SF Pro Display Italic', sans-serif;
+}
+
+.hero-content {
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.inter-text {
+  font-family: 'Inter', sans-serif;
+}
+</style>

@@ -10,6 +10,37 @@
   --color-lighter-blue: #D5E5FF;
 }
 
+@font-face {
+  font-family: 'SF Pro Display';
+    src: url('../assets/fonts/SFPRODISPLAYREGULAR.woff') format('woff'),
+      url('../assets/fonts/SFPRODISPLAYREGULAR.woff') format('woff2');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Bold';
+    src: url('../assets/fonts/SFPRODISPLAYBOLD.woff') format('woff'),
+      url('../assets/fonts/SFPRODISPLAYBOLD.woff') format('woff2');
+  font-weight: 700; /* bold */
+  font-style: bold;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Italic';
+    src: url('../assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.woff') format('woff'),
+      url('../assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.woff') format('woff2');
+  font-weight: 700; /* bold italic */
+  font-style: italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter_18pt-Regular.woff') format('woff'),
+      url('../assets/fonts/Inter_18pt-Regular.woff') format('woff2');
+  font-weight: 400; /* bold italic */
+  font-style: normal;
+}
+
 body{
    font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

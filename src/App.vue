@@ -6,6 +6,8 @@ import TheFooter from './components/TheFooter.vue';
 
 <template>
   <div class="flex flex-col min-h-screen max-w-screen bg-[Black]">
+    <!-- <div class="flex flex-col min-h-screen max-w-screen  bg-gradient-to-br from-black/10 to-[#0164FD]/50"> -->
+
     <TheNavbar />
     <main class="w-full flex-grow ">
       <RouterView />

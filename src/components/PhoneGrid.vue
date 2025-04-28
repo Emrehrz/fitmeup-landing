@@ -3,12 +3,14 @@
     <!-- Üst kısım - Resim sağa yaslanmış -->
     <div class="flex flex-col md:flex-row items-center justify-between px-0 py-6 sm:py-10 md:py-12">
       <!-- Sol taraf (yazı kısmı) -->
-      <div class="w-full md:w-1/2 lg:w-2/5 text-center md:text-left mb-6 md:mb-0 sm:pl-8 px-4 sm:px-0 md:pl-16 ">
-        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
+      <!-- Alt metin bölümü -->
+
+      <div class="w-full md:w-1/2 lg:w-2/5 text-center md:text-left mb-6 md:mb-0 sm:pl-8 px-4 sm:px-0 md:pl-16">
+        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white sf-pro-bold">
           Öğrencilerinize kullanıcı dostu bir deneyim sunun
         </h2>
-        <p class="text-base sm:text-lg md:text-xl text-white/80 md:pr-6">
-          Her adımda motivasyonlarını artırın ve eğitim sürecini kolaylaştırın!
+        <p class="text-base sm:text-lg md:text-xl sf-pro">
+          her adımda motivasyonlarını artırın!
         </p>
       </div>
 
@@ -19,6 +21,7 @@
       </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Alt kısım - Büyütülmüş telefon ve açıklama -->
     <!-- <div
       class="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-24 lg:gap-32 pt-8 sm:py-12 md:py-16 lg:py-0 px-4 sm:px-8 md:px-16 lg:px-24">
@@ -42,6 +45,8 @@
         </a>
       </div>
     </div> -->
+=======
+>>>>>>> 4313670 (enterprise componenti, navbar & fontlar)
   </div>
 </template>
 
@@ -51,6 +56,14 @@
   background-size: 200% 200%;
   animation: gradientMove 8s ease infinite;
 } */
+
+.sf-pro-bold {
+  font-family: 'SF Pro Display Bold', sans-serif;
+}
+
+.sf-pro {
+  font-family: 'SF Pro Display', sans-serif;
+}
 
 @keyframes gradientMove {
   0% {
