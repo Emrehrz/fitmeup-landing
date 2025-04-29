@@ -1,11 +1,12 @@
 <script setup>
 const tags = [
   { name: 'Süreç Takibi', href: '#' },
-  { name: 'Check-In Takibi', href: '#' },
   { name: 'Antrenman Özelleştirme', href: '#' },
+  { name: 'Check-In Takibi', href: '#' },
   { name: 'WhatsApp Entegrasyonu', href: '#' },
   { name: 'Kişiye Özel Süreç', href: '#' },
-  { name: 'Antrenman Özelleştirme', href: '#' },
+  { name: 'Öğün Takibi', href: '#' },
+
 ];
 
 import { ref, onMounted } from 'vue';

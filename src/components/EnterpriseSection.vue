@@ -25,7 +25,7 @@
         koçluk uygulamanızı oluşturun
       </p>
 
-      <a href="#"
+      <a href="https://calendar.app.google/xj7AgzCjhtLunRPD8" target="_blank"
         class="mt-4 sm:mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 sm:py-4 px-8 sm:px-10 rounded-full transition-all text-base sm:text-lg shadow-lg hover:shadow-xl">
         HEMEN KATIL
       </a>

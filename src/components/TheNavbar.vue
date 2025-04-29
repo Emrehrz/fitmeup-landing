@@ -34,7 +34,7 @@ const mobileMenuOpen = ref(false)
         </a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#"
+        <a href="https://calendar.app.google/xj7AgzCjhtLunRPD8" target="_blank"
           class="flex gap-2 items-center px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 text-white transition-opacity duration-300 rounded-md">
           DEMO GÖRÜŞME ALIN
           <ArrowRightIcon class="size-4" />
