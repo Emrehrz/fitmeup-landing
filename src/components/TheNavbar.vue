@@ -15,8 +15,9 @@ const mobileMenuOpen = ref(false)
     <nav class="flex items-center justify-between p-6 lg:px-8 lg:p-8" aria-label="Global">
       <div class="flex lg:flex-1">
 
-        <a href="#" class="p-4 rounded-lg bg-[#232323]">
-          <img src="../assets/img/fitmeuplogo.webp" alt="FitMeUp Logo" class="logo" />
+        <a href="#" class="p-4 rounded-lg ">
+          <!-- <img src="../assets/img/fitmeuplogo.webp" alt="FitMeUp Logo" class="logo" /> -->
+          <img src="../assets/img/Fitmeuplogo.png" alt="FitMeUp Logo" class="logo" />
         </a>
       </div>
       <!-- <div class="flex lg:hidden">
