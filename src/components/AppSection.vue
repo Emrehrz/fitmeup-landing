@@ -2,6 +2,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faAppleWhole, faClipboardCheck, faDumbbell, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 
 const isMobile = ref(false);
@@ -45,13 +46,14 @@ onBeforeUnmount(() => {
 
         <!-- Icons and Whatsapp usage text -->
         <div class="flex flex-col sm:flex-row items-center justify-center mt-4 space-y-3 sm:space-y-0 sm:space-x-3">
-          <div class="flex items-center space-x-4 sm:space-x-3 text-white">
+          <!-- <div class="flex items-center space-x-4 sm:space-x-3 text-white">
             <FontAwesomeIcon :icon="faAppleWhole" />
             <FontAwesomeIcon :icon="faSearch" />
             <FontAwesomeIcon :icon="faDumbbell" />
             <FontAwesomeIcon :icon="faClipboardCheck" />
-          </div>
+          </div> -->
           <span class="text-white text-sm sm:text-lg font-semibold px-2 mt-2 sm:mt-0">
+            <FontAwesomeIcon :icon="faWhatsapp" class="text-green-400 my-auto mr-1" />
             <span class="rounded-lg text-green-400 font-bold">Whatsapp</span>'ı
             <span class="text-[Lightblue]">fitmeup</span>
             ile birlikte kullanın.

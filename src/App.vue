@@ -29,10 +29,6 @@ const { isDarkMode, toggleDarkMode } = useDarkMode();
 </template>
 
 <style>
-html {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 /* Chrome, Edge ve Safari için */
 ::-webkit-scrollbar {
   width: 4px;

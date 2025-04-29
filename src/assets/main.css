@@ -12,10 +12,14 @@
   --color-lighter-blue: #D5E5FF;
 }
 
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 body{
   touch-action: manipulation;
 }
+
 
 @font-face {
   font-family: 'SF Pro Display';

@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon, ArrowUpRightIcon, ArrowRightIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
@@ -16,23 +15,23 @@ const mobileMenuOpen = ref(false)
     <nav class="flex items-center justify-between p-6 lg:px-8 lg:p-8" aria-label="Global">
       <div class="flex lg:flex-1">
 
-        <a href="#" class=" p-4 rounded-lg bg-[#555b60]/90 dark:bg-transparent">
-          <img src="../assets/img/logo-cropped.webp" alt="FitMeUp Logo" class="logo" />
+        <a href="#" class="p-4 rounded-lg bg-[#232323]">
+          <img src="../assets/img/fitmeuplogo.webp" alt="FitMeUp Logo" class="logo" />
         </a>
       </div>
-      <div class="flex lg:hidden">
+      <!-- <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
           @click="mobileMenuOpen = true">
           <span class="sr-only">Open main menu</span>
           <Bars3Icon class="size-6" aria-hidden="true" />
         </button>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-12">
+      </div> -->
+      <!-- <div class="hidden lg:flex lg:gap-x-12">
         <a v-for="item in navigation" :key="item.name" :href="item.href" class="flex gap-2 text-sm/6 font-semibold">
           {{ item.name }}
           <ArrowUpRightIcon class="size-4" aria-hidden="true" />
         </a>
-      </div>
+      </div> -->
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="https://calendar.app.google/xj7AgzCjhtLunRPD8" target="_blank"
           class="flex gap-2 items-center px-4 py-2 text-sm/6 font-semibold bg-gradient-to-r from-blue-700 to-blue-400 hover:opacity-90 text-white transition-opacity duration-300 rounded-md">
@@ -41,7 +40,7 @@ const mobileMenuOpen = ref(false)
         </a>
       </div>
     </nav>
-    <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
+    <!-- <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 z-50" />
       <DialogPanel
         class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-br bg-white text-[Black] dark:bg-[Black] dark:text-white  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -69,7 +68,7 @@ const mobileMenuOpen = ref(false)
           </div>
         </div>
       </DialogPanel>
-    </Dialog>
+    </Dialog> -->
   </header>
 </template>
 
