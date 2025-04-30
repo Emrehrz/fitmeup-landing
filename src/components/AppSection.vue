@@ -46,12 +46,7 @@ onBeforeUnmount(() => {
 
         <!-- Icons and Whatsapp usage text -->
         <div class="flex flex-col sm:flex-row items-center justify-center mt-4 space-y-3 sm:space-y-0 sm:space-x-3">
-          <!-- <div class="flex items-center space-x-4 sm:space-x-3 text-white">
-            <FontAwesomeIcon :icon="faAppleWhole" />
-            <FontAwesomeIcon :icon="faSearch" />
-            <FontAwesomeIcon :icon="faDumbbell" />
-            <FontAwesomeIcon :icon="faClipboardCheck" />
-          </div> -->
+
           <span class="text-white text-sm sm:text-lg font-semibold px-2 mt-2 sm:mt-0">
             <FontAwesomeIcon :icon="faWhatsapp" class="text-green-400 my-auto mr-1" />
             <span class="rounded-lg text-green-400 font-bold">Whatsapp</span>'ı
@@ -64,7 +59,7 @@ onBeforeUnmount(() => {
       <!-- Laptop mockup -->
       <div class="flex-grow flex justify-center items-center perspective-1000">
         <div class="w-full max-w-4xl transform rotate-x-5 laptop-animation">
-          <img src="../assets/img/Laptop.webp" alt="Laptop FitMeUp Uygulaması" class="w-full" />
+          <img src="../assets/img/Laptop1.png" alt="Laptop FitMeUp Uygulaması" class="w-full" />
         </div>
       </div>
 
