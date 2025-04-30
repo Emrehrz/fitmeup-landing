@@ -6,9 +6,15 @@ import TheFooter from './components/TheFooter.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { useDarkMode } from './composables/useDarkMode';
+import { provide } from 'vue';
+import { useDarkModeStore } from './stores/darkMode';
 
 // Dark mode'u değiştirme fonksiyonu
-const { isDarkMode, toggleDarkMode } = useDarkMode();
+// const { isDarkMode, toggleDarkMode } = useDarkMode();
+
+const darkModeStore = useDarkModeStore();
+
+const { toggleDarkMode, isDarkMode } = darkModeStore;
 
 </script>
 
@@ -20,7 +26,7 @@ const { isDarkMode, toggleDarkMode } = useDarkMode();
       <RouterView />
     </main>
     <TheFooter />
-    <button @click="toggleDarkMode"
+    <button @click="toggleDarkMode()"
       class="fixed bottom-4 right-4 p-3 rounded-full bg-[LightBlue] dark:bg-[Black] text-[Black] dark:text-[LightBlue] shadow-md hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 z-10"
       aria-label="Dark mode ve light mode arasında geçiş yap">
       <FontAwesomeIcon :icon="isDarkMode ? faSun : faMoon" class="w-5 h-5" />
